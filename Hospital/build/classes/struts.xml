@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="strutsqs" extends="struts-default" namespace="/" >
+		<action name="HospitalManager" class="com.action.HospitalManager">
+			<result name="success">/HospitalManager.jsp</result>
+		</action>
+		<action name="HospitalAddSave" class="com.action.HospitalAddSave">
+		</action>
+		<action name="HospitalUpdate" class="com.action.HospitalUpdate">
+		    <result name="success">/HospitalUpdate.jsp</result>
+		</action>
+		<action name="HospitalUpdateSave" class="com.action.HospitalUpdateSave">
+		</action>
+		<action name="HospitalDel" class="com.action.HospitalDel">
+		  <result name="success" type="chain">HospitalManager</result>
+		</action>
+		<action name="HospitalSQL" class="com.action.HospitalSQL">
+		  	<result name="success">/HospitalSQL3.jsp</result>
+		</action>
+		<action name="HospitalSQL2" class="com.action.HospitalSQL2">
+		</action>
+		
+		<action name="DoctorManager" class="com.action.DoctorManager">
+			<result name="success">/DoctorManager.jsp</result>
+		</action>
+		<action name="DoctorAddSave" class="com.action.DoctorAddSave">
+		</action>
+		<action name="DoctorUpdate" class="com.action.DoctorUpdate">
+		    <result name="success">/DoctorUpdate.jsp</result>
+		</action>
+		<action name="DoctorUpdateSave" class="com.action.DoctorUpdateSave">
+		</action>
+		<action name="DoctorDel" class="com.action.DoctorDel">
+		  <result name="success" type="chain">DoctorManager</result>
+		</action>
+		<action name="DoctorSQL" class="com.action.DoctorSQL">
+		  	<result name="success">/DoctorSQL3.jsp</result>
+		</action>
+		<action name="DoctorSQL2" class="com.action.DoctorSQL2">
+		</action>
+		
+		<action name="PatientManager" class="com.action.PatientManager">
+			<result name="success">/PatientManager.jsp</result>
+		</action>
+		<action name="PatientAddSave" class="com.action.PatientAddSave">
+		</action>
+		<action name="PatientUpdate" class="com.action.PatientUpdate">
+		    <result name="success">/PatientUpdate.jsp</result>
+		</action>
+		<action name="PatientUpdateSave" class="com.action.PatientUpdateSave">
+		</action>
+		<action name="PatientDel" class="com.action.PatientDel">
+		  <result name="success" type="chain">PatientManager</result>
+		</action>
+		<action name="PatientSQL" class="com.action.PatientSQL">
+		  	<result name="success">/PatientSQL3.jsp</result>
+		</action>
+		<action name="PatientSQL2" class="com.action.PatientSQL2">
+		</action>
+		
+		<action name="ReportManager" class="com.action.ReportManager">
+			<result name="success">/ReportManager.jsp</result>
+		</action>
+		<action name="ReportAddSave" class="com.action.ReportAddSave">
+		</action>
+		<action name="ReportUpdate" class="com.action.ReportUpdate">
+		    <result name="success">/ReportUpdate.jsp</result>
+		</action>
+		<action name="ReportUpdateSave" class="com.action.ReportUpdateSave">
+		</action>
+		<action name="ReportDel" class="com.action.ReportDel">
+		  <result name="success" type="chain">ReportManager</result>
+		</action>
+		<action name="ReportSQL" class="com.action.ReportSQL">
+		  	<result name="success">/ReportSQL3.jsp</result>
+		</action>
+		<action name="ReportSQL2" class="com.action.ReportSQL2">
+		</action>
+		
+		<action name="DepartmentManager" class="com.action.DepartmentManager">
+			<result name="success">/DepartmentManager.jsp</result>
+		</action>
+		<action name="DepartmentAddSave" class="com.action.DepartmentAddSave">
+		</action>
+		<action name="DepartmentUpdate" class="com.action.DepartmentUpdate">
+		    <result name="success">/DepartmentUpdate.jsp</result>
+		</action>
+		<action name="DepartmentUpdateSave" class="com.action.DepartmentUpdateSave">
+		</action>
+		<action name="DepartmentDel" class="com.action.DepartmentDel">
+		  <result name="success" type="chain">DepartmentManager</result>
+		</action>
+		<action name="DepartmentSQL" class="com.action.DepartmentSQL">
+		  	<result name="success">/DepartmentSQL3.jsp</result>
+		</action>
+		<action name="DepartmentSQL2" class="com.action.DepartmentSQL2">
+		</action>
+		
+		<action name="Aggregate" class="com.action.Aggregate">
+			<result name="success">/Aggregate.jsp</result>
+		</action>
+		<action name="AggExistsSave" class="com.action.AggExistsSave">
+		  	<result name="success">/Aggregate.jsp</result>
+		</action>
+		<action name="AggNotExistsSave" class="com.action.AggNotExistsSave">
+		  	<result name="success">/Aggregate.jsp</result>
+		</action>
+		<action name="AggInSave" class="com.action.AggInSave">
+		  	<result name="success">/Aggregate.jsp</result>
+		</action>
+		<action name="AggNotInSave" class="com.action.AggNotInSave">
+		  	<result name="success">/Aggregate.jsp</result>
+		</action>
+		<action name="AggSQL" class="com.action.AggSQL">
+		  	<result name="success">/Aggregate.jsp</result>
+		</action>
+		
+		<action name="Func" class="com.action.Func">
+			<result name="success">/Func2.jsp</result>
+		</action>
+		<action name="FuncSearch" class="com.action.FuncSearch">
+			<result name="success">/Func.jsp</result>
+		</action>
+		<action name="FuncSQL" class="com.action.FuncSQL">
+			<result name="success">/Func2.jsp</result>
+		</action>
+	</package>
+</struts>
